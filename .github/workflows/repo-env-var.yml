@@ -38,4 +38,4 @@ jobs:
 
       - name: repo secret
 
-        run: echo hello ${{ secrets.SUPER
+        run: echo hello ${{ secrets.SUPERSECRET}}
