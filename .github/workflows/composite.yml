@@ -22,7 +22,7 @@ jobs:
     
     - name: Deploy ACR
       id: deploy-acr
-      uses: './.github/workflows/composite'
+      uses: './.github/workflows/composite/sample'
       with:
         acr-name: ${{ env.ACR-NAME }}
        
