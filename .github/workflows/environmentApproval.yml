@@ -10,7 +10,7 @@ jobs:
       - name: build
         run: echo Building code
 
-  deploy_integration:
+  deploy_Integration:
     needs: [build]
     runs-on: ubuntu-latest
     environment: integration
@@ -35,9 +35,9 @@ jobs:
         run: echo deploy to environment UAT
 
   deploy_Production:
-    needs: [deploy_production]
+    needs: [deploy_Production]
     runs-on: ubuntu-latest
-    environment: Production
+    environment: production
     steps:
       - name: test
         run: echo deploy to environment Production
